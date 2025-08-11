@@ -1,0 +1,21 @@
+# config.yaml
+database:
+  host: localhost
+  port: 5432
+  dbname: retail_mart
+  user: postgres
+  password: postgres
+  schema: trade_data
+
+paths:
+  marketing_csv: "/Users/pnupadya/Documents/learn/git_repos/data_analysis_agent/data/marketing.csv"
+  weather_csv: "/Users/pnupadya/Documents/learn/git_repos/data_analysis_agent/data/weather.csv"
+  report_html: "/Users/pnupadya/Documents/learn/git_repos/data_analysis_agent/output/analysis_report.html"
+
+weather_api:
+  url: "http://localhost:9000/weather"
+
+llm:
+  model_path: "/Users/pnupadya/Documents/learn/models/deepseek/ds_coder/deepseek-coder-1.3b-instruct.Q3_K_M.gguf"
+  temperature: 0.2
+  max_tokens: 2048
